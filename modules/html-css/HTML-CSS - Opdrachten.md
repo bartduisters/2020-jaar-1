@@ -123,7 +123,33 @@ Er is gevraagd om een layout te voorzien om een recept te tonen.
 - Voeg een ongeordende lijst toe met de benodigde ingrediënten.
 - Voeg een hoofding (zelfde grootte als die van "Ingrediënten"), met als content
   "Bereidingswijze".
-  Voeg een geordende lijst toe met de stappen om het gerecht te maken.
+  Voeg een geordende lijst toe met de stappen om het gerecht te maken. 
+  
+  Jorg
+  
+  <!--Opdracht 8-->
+  <!DOCTYPE html5>
+  <html>
+    <head>
+      <title>Opdracht 8</title>
+    </head>
+    <body>
+      <h1>Pannenkoeken</h1>
+      <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg" alt alt="Pannenkoeken" />
+      <h2>Ingrediënten</h2>
+      <ul>
+        <li>750ml melk</li>
+        <li>3 eieren</li>
+        <li>250g bloem</li>
+      </ul>
+      <h2>Bereidingswijze</h2>
+      <ol>
+        <li>zeef de bloem in een mengkom</li>
+        <li>voeg de 3 eieren toe</li>
+        <li>voeg de melk al roerend toe</li>
+      </ol>
+    </body>
+  </html>
 
 ## Opdracht 3
 
