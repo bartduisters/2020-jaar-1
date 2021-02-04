@@ -77,7 +77,13 @@ Oplossing:
 
 Oplossing:
 ```html
-<!-- TODO -->
+<!doctype html>
+<head>
+  <title> Marvi Hendriks </title>
+</head>
+<body>
+  <h1> Marvi Hendriks </h1>
+</body>
 ```
 
 ## Opdracht 3
