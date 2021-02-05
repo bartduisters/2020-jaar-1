@@ -111,7 +111,28 @@ Voeg drie links toe naar jouw favoriete websites.
 
 Oplossing:
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="https://www.krcgenk.be/nl"> Dit is de site van KRC Genk</a>
+    <br />
+    <a href="https://sporza.be/nl/"> Dit is de site van Sporza</a>
+    <br />
+    <a
+      href="https://www.bol.com/nl/p/4pcs-sexy-jarretel-setje-incl-kousen-sexy-lingerie-setje-erotiek-tanga-lingerie-borduurwerk-valentijn-cadeau-voor-vrouw-m-34-36/9300000017230449/"
+    >
+      Als we goede punten krijgen, geven we u zo ene cadeau. Groetjes Marvi,
+      Domenico, Marco</a
+    >
+  </body>
+</html>
+
 ```
 
 ## Opdracht 6
