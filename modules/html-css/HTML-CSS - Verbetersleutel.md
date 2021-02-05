@@ -100,7 +100,18 @@ aangezien de website enkel lokaal geopend wordt.
 
 Oplossing:
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://d1ez3020z2uu9b.cloudfront.net/imagecache/blog-photos/17120_Fill_670_0.png"
+
+</body>
+</html>
 ```
 
 ## Opdracht 5
