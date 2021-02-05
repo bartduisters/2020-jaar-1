@@ -810,7 +810,9 @@ De class selector selecteert **alle elementen met de gedefinieerde class**.
 </html>
 ```
 
-Merk op dat er een `.` voor de naam van de class staat in CSS. `class='roze'` op het element wordt `.roze` in CSS.
+Merk op dat er een `.` voor de naam van de class staat in CSS. `class='roze'` op het element, wordt `.roze` in CSS.
+
+![voorbeeld-14](assets/voorbeeld-14.jpeg)
 
 ### id
 
@@ -857,3 +859,7 @@ Per pagina zou elke identifier uniek moeten zijn.
   </body>
 </html>
 ```
+
+Merk op dat er een `#` voor de naam van de identifier staat in CSS. `id='roze'` op het element, wordt `.roze` in CSS.
+
+![voorbeeld-15](assets/voorbeeld-15.jpeg)
