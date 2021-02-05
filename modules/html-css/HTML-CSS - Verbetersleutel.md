@@ -125,7 +125,7 @@ Oplossing:
     <a href="https://sporza.be/nl/"> Dit is de site van Sporza</a>
     <br />
     <a
-      href="https://www.bol.com/nl/p/4pcs-sexy-jarretel-setje-incl-kousen-sexy-lingerie-setje-erotiek-tanga-lingerie-borduurwerk-valentijn-cadeau-voor-vrouw-m-34-36/9300000017230449/"
+      href="https://www.bol.com/"
     >
       Als we goede punten krijgen, geven we u zo ene cadeau. Groetjes Marvi,
       Domenico, Marco</a
