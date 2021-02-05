@@ -96,7 +96,7 @@ genaamd `opdracht-6.html`. Open het bestand in VSCode en type `html`.
 
 Er verschijnen `Emmet Abbreviations`, kies voor `html:5` en klik op enter.
 
-![2020-10-25-1603653261_screenshot_503x119](media/2020-10-25-1603653261_screenshot-959813882.jpeg)
+![opdracht-1](assets/opdracht-1.jpeg)
 
 # Lijsten en tabellen
 
