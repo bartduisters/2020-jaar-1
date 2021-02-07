@@ -737,6 +737,8 @@ worden toegepast op bepaalde elementen.
 
 ### Element
 
+De element selector selecteert **alle elementen** die overeenkomen met de naam van de selector.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -757,7 +759,7 @@ worden toegepast op bepaalde elementen.
       * Dit selecteert ALLE elementen met de tag <div></div> 
       */
       div {
-        /* Wijzig de achtergrondkleur naar zwart */
+        /* Wijzig de achtergrondkleur naar roze (deeppink) */
         background-color: deeppink;
         /* Wijzig de margin (de witruimte rondom het element) naar 10px (standaard 0px) */
         margin: 10px 10px 10px 10px;
@@ -777,8 +779,87 @@ worden toegepast op bepaalde elementen.
 
 ### class
 
-// Placeholder voor de sectie over class selectors
+De class selector selecteert **alle elementen met de gedefinieerde class**.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+      * Dit selecteert ALLE elementen met class='roze'
+      */
+      .roze {
+        /* Wijzig de achtergrondkleur naar roze (deeppink) */
+        background-color: deeppink;
+        /* Wijzig de margin (de witruimte rondom het element) naar 10px (standaard 0px) */
+        margin: 10px 10px 10px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="roze">Eerste element</div>
+    <div>Tweede element</div>
+    <div>Derde element</div>
+    <p class="roze">Vierde element</p>
+  </body>
+</html>
+```
+
+Merk op dat er een `.` voor de naam van de class staat in CSS. `class='roze'` op het element, wordt `.roze` in CSS.
+
+![voorbeeld-14](assets/voorbeeld-14.jpeg)
 
 ### id
 
-// Placeholder voor de sectie over id selectors
+De class selector selecteert **alle elementen met de gedefinieerde identifier**.
+
+**Let op**: Ook al is het mogelijk om meerdere elementen dezelfde identifier toe te kennen, het is **niet** de bedoeling om dit te doen.
+Per pagina zou elke identifier uniek moeten zijn.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+      * Dit selecteert ALLE elementen met id='eerste'
+      */
+      #eerste {
+        /* Wijzig de achtergrondkleur naar roze */
+        background-color: deeppink;
+        /* Wijzig de margin (de witruimte rondom het element) naar 10px (standaard 0px) */
+        margin: 10px 10px 10px 10px;
+      }
+
+      /* 
+      * Dit selecteert ALLE elementen met id='tweede'
+      */
+      #laatste {
+        /* Wijzig de achtergrondkleur naar blauw */
+        background-color: blue;
+        /* Wijzig de margin (de witruimte rondom het element) naar 10px (standaard 0px) */
+        margin: 10px 10px 10px 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="eerste">Eerste element</div>
+    <div>Tweede element</div>
+    <div>Derde element</div>
+    <p id="laatste">Vierde element</p>
+  </body>
+</html>
+```
+
+Merk op dat er een `#` voor de naam van de identifier staat in CSS. `id='roze'` op het element, wordt `.roze` in CSS.
+
+![voorbeeld-15](assets/voorbeeld-15.jpeg)
