@@ -77,7 +77,7 @@ Oplossing:
 
 Oplossing:
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <head>
   <title> Marvi Hendriks </title>
 </head>
