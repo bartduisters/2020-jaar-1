@@ -687,6 +687,8 @@ class Persoon {
   public getPinCode() {
     return this.pinCode;
   }
+
+  public getWachtwoord()
 }
 
 const persoon = new Persoon(1111, 1234, 'John Duck', 29);
@@ -753,18 +755,18 @@ class Persoon {
   leeftijd;
 
   constructor(pin, wachtwoord, naam, leeftijd) {
-    this.pinCode = pin;
-    this.wachtwoord = wachtwoord;
+    this._pinCode = pin;
+    this._wachtwoord = wachtwoord;
     this.naam = naam;
     this.leeftijd = leeftijd;
   }
 
   _getPin() {
-    return this.pinCode;
+    return this._pinCode;
   }
 
   getPinCode() {
-    return this.pinCode;
+    return this._pinCode;
   }
 }
 
