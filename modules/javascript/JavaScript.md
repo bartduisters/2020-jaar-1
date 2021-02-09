@@ -786,4 +786,107 @@ om een soort van `access modifiers` te hebben binnen JavaScript.
 
 ## get & set
 
-<!-- Live in de les - aanvulling achteraf -->
+Het keyword `get` en het keyword `set` kunnen gebruikt worden om `getters` en `setters` te maken.
+Dit zijn methodes die net iets anders werken.
+
+Stel dat er een class is Cursist:
+```js
+class Cursist {
+  _voornaam;
+  _achternaam;
+
+  constructor(voornaam, achternaam) {
+    this._voornaam = voornaam;
+    this._achternaam = achternaam;
+  }
+
+  getVoornaam() {
+    return this._voornaam;
+  }
+
+  setVoornaam(voornaam) {
+    this._voornaam = voornaam;
+  }
+
+  getAchternaam() {
+    return this._achternaam;
+  }
+
+  setAchternaam(achternaam) {
+    this._achternaam = achternaam;
+  }
+
+  getNaam() {
+    if (this._voornaam && this._achternaam) {
+      return `${this._voornaam} ${this._achternaam}`;
+    } else if (this._voornaam) {
+      return this._voornaam;
+    } else {
+      return this._achternaam;
+    }
+  }
+}
+
+const cursist = new Cursist("John", "Duck");
+
+console.log(cursist.getVoornaam()); // "John"
+console.log(cursist.getAchternaam()); // "Duck"
+cursist.setVoornaam("Jane");
+console.log(cursist.getNaam()); // "Jane Duck"
+```
+
+Dit zou werken en het is perfect geldige JavaScript. Maar het zou fijn zijn als de
+voornaam, achternaam en volledig naam opgevraagd kunnen worden als property.
+
+Hiervoor kan er gebruik gemaakt worden van `get` en `set`.
+
+```js
+class Cursist {
+  _voornaam;
+  _achternaam;
+
+  constructor(voornaam, achternaam) {
+    this._voornaam = voornaam;
+    this._achternaam = achternaam;
+  }
+
+  get voornaam() {
+    return this._voornaam;
+  }
+
+  set voornaam(voornaam) {
+    this._voornaam = voornaam;
+  }
+
+  get achternaam() {
+    return this._achternaam;
+  }
+
+  set achternaam(achternaam) {
+    this.achternaam = achternaam;
+  }
+
+  get naam() {
+    if (this._voornaam && this._achternaam) {
+      return `${this._voornaam} ${this._achternaam}`;
+    } else if (this._voornaam) {
+      return this._voornaam;
+    } else {
+      return this._achternaam;
+    }
+  }
+}
+
+const cursist = new Cursist("John", "Duck");
+
+console.log(cursist.voornaam); // "John"
+console.log(cursist.achternaam); // "Duck"
+cursist.voornaam = "Jane";
+console.log(cursist.naam); // "Jane Duck"
+```
+
+Het voordeel van het gebruiken van `getters` en `setters`, is dat het gebruikt kan worden
+alsof het properties zijn. Maar in feite zijn het methodes, waardoor er dus extra logica
+uitgevoerd kan worden. Een voorbeeld hier van is `get naam()`. Op de instantie wordt
+het opgeroepen alsof het een property is `cursist.naam`, maar achterliggend wordt
+het codeblok van de `getter methode` uitgevoerd.
