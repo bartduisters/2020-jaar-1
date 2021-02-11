@@ -79,7 +79,15 @@ Oplossing:
 Oplossing:
 
 ```html
-<!-- TODO -->
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <title>Jos Bedelaar</title>
+     </head>
+     <body>
+         <h1>Jos Bedelaar</h1>
+     </body>
+ </html>
 ```
 
 ## Opdracht 3
