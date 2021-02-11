@@ -868,4 +868,25 @@ Merk op dat er een `#` voor de naam van de identifier staat in CSS. `id='roze'` 
 
 Er is geen vaste regel om de structuur van een project te bepalen.
 
-<!-- Demo in de les - aanvulling achteraf -->
+Binnen deze cursus zal gebruikt gemaakt worden van een vaste structuur om een overzichtelijk project te behouden.
+
+```
+/
+- index.html
+- assets/
+-- css/
+--- styles.css
+--- contact.css
+--- about.css
+--- ...
+-- img/
+--- selfie.jpg
+--- duck.jpg
+--- ...
+- pages/
+-- contact.html
+-- about.html
+-- ...
+```
+
+De `/` slaat terug op 'de root van het project'. In de root zelf bevindt zich de index.html, dit is de hoofdpagina van het project en zal altijd index.html noemen. In de map `assets` bevindt zich alles wat in het project gebruikt wordt: stylesheets (css), afbeeldingen (img) ... In de map `pages` bevinden zich alle extra pagina's. Wanneer er JavaScript bijkomt, zal dit komen in een map `js` in de map `assets`.
