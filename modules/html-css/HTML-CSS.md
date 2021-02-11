@@ -890,3 +890,8 @@ Binnen deze cursus zal gebruikt gemaakt worden van een vaste structuur om een ov
 ```
 
 De `/` slaat terug op 'de root van het project'. In de root zelf bevindt zich de index.html, dit is de hoofdpagina van het project en zal altijd index.html noemen. In de map `assets` bevindt zich alles wat in het project gebruikt wordt: stylesheets (css), afbeeldingen (img) ... In de map `pages` bevinden zich alle extra pagina's. Wanneer er JavaScript bijkomt, zal dit komen in een map `js` in de map `assets`.
+
+
+## JavaScript koppelen
+
+<!-- Dit moet nog geschreven worden -->
