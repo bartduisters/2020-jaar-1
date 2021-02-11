@@ -863,3 +863,9 @@ Per pagina zou elke identifier uniek moeten zijn.
 Merk op dat er een `#` voor de naam van de identifier staat in CSS. `id='roze'` op het element, wordt `.roze` in CSS.
 
 ![voorbeeld-15](assets/voorbeeld-15.jpeg)
+
+# Projectstructuur
+
+Er is geen vaste regel om de structuur van een project te bepalen.
+
+<!-- Demo in de les - aanvulling achteraf -->
