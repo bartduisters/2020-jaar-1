@@ -583,3 +583,54 @@ console.log(docent1.getMotto());
 console.log(docent2.begroeting());
 console.log(docent2.getMotto());
 ```
+
+# Access modifiers - get & set
+
+## Schrijven
+
+### Opdracht 1
+
+#### Deel 1
+
+Maak een class genaamd `Lijst`.
+
+Voeg aan deze class toe:
+- private property `lijst`
+- getter methode `lengte`:
+  - Dit geeft de lengte van de private property `lijst` terug
+- setter methode `voegToe`
+  - Dit voegt een item toe aan het einde van de private property `lijst`
+- methode `aanpassen`, deze methode heeft één parameter genaamd `functie`:
+  - ga er vanuit dat de functie die meegegeven wordt als paramter, altijd een waarde teruggeeft
+  - gebruik iteratie om over elke waarde van de private property `lijst` te itereren, ken de waarde
+  die de functie teruggeeft toe aan de index waarover geïterreerd wordt
+
+Oplossing:
+```js
+// TODO: Pull Request de oplossing
+```
+
+#### Deel 2
+
+Maak gebruik van de gemaakte class uit deel 1:
+- initialiseer een variabele genaamd `nummers` met een instantie van de class `Lijst`
+- gebruik de setter `voegToe` om verschillende nummers aan de lijst toe te voegen
+  - De nummers om toe te voegen: 3, 1, 4, 1, 5, 9, 2
+- maak een functie genaamd `maalTwee`:
+  - de functie accepteert één parameter genaamd `item`
+  - de functie geeft de parameter terug, vermenigvuldigd met twee
+- roep de functie `aanpassen` aan, geef de functie `maalTwee` mee als parameter (zonder de functie aan te roepen)
+
+```js
+// Voeg de opdracht hier toe
+
+// Onderstaande lus zal als resultaat hebben: 6, 2, 8, 2, 10, 18, 4
+for (let i = 0; i < nummers.lengte; i++) {
+  console.log(nummers[i]);
+}
+```
+
+Oplossing:
+```js
+// TODO: Pull Request de oplossing
+```

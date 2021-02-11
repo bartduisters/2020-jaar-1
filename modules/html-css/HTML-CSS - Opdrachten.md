@@ -96,7 +96,7 @@ genaamd `opdracht-6.html`. Open het bestand in VSCode en type `html`.
 
 Er verschijnen `Emmet Abbreviations`, kies voor `html:5` en klik op enter.
 
-![2020-10-25-1603653261_screenshot_503x119](media/2020-10-25-1603653261_screenshot-959813882.jpeg)
+![opdracht-1](assets/opdracht-1.jpeg)
 
 # Lijsten en tabellen
 
@@ -160,3 +160,90 @@ hoofding, met als content "naam".
 - Style de eerste div zodat het er uitziet als een `h4`-element, maak deze tekst blauw
 - Style de eerste div zodat het er uitziet als een `h5`-element, maak deze tekst rood
 - Style de eerste div zodat het er uitziet als een `h6`-element, maak deze tekst blauw
+
+## Opdracht 2
+
+- Maak een HTML-bestand
+- Voeg een div toe met als tekst: John Duck
+- Voeg `inline css` toe, zorg ervoor dat de tekst van de div in het rood getoond wordt
+
+## Opdracht 3
+
+- Maak een HTML-bestand
+- Voeg een div toe met als tekst: John Duck
+- Voeg `interne css` toe, zorg ervoor dat de tekst in het rood getoond wordt
+
+## Opdracht 4
+
+- Maak een HTML-bestand
+- Voeg een div toe met als tekst: John Duck
+  Voeg `externe css` toe, zorg ervoor dat de tekst in het rood getoond wordt (doe dit in een bestand genaamd `styling.css`)
+
+## Opdracht 5
+
+- Maak een HTML-bestand
+- Voeg drie div-elementen toe
+- Door middel van `externe css` wordt ervoor gezorgd dat
+  alle div-elementen een blauwe achtergrond hebben en witte
+  tekst
+- Door middel van `interne css` wordt ervoor gezorgd dat
+  de middelste div, een roze achtergrond heeft en zwarte tekst
+
+Tip: denk aan de verschillende `selectors` (element, class, id)
+
+# Projectstructuur
+
+## Opdracht 1
+
+Als de oefening af is, push deze naar jouw eigen GitHub-repository en stuur de link naar de docent.
+
+Zorg voor een projectstructuur waarbij:
+
+- Alle HTML-pagina's een omschrijvende naam hebben.
+- Alle HTML-pagina's de globale stylesheet inladen.
+- Zorg voor een map waarin alle `assets` van dit project komen.
+- Alle HTML-pagina's een eigen stylesheet inladen (denk aan de volgorde van het inladen). Indien de stylesheet niet bestaat, maak deze aan in de map `css` in de map `assets`.
+- Zorg ervoor dat alle pagina's, behalve de hoofdpagina, in een map `pages` zitten.
+- Voeg alle afbeeldingen die gebruikt worden doorheen deze oefening toe aan de map `img` in de map `assets`.
+
+De inhoud:
+
+- Alle pagina's:
+
+  - Bovenaan navigatie met links om naar alle pagina's te navigeren.
+
+- Hoofdpagina:
+
+  - Een introductietekst en een foto (bestandsnaam van de foto: selfie.jpg).
+  - Wanneer er op de foto geklikt wordt, moet de `about`-pagina geopend worden.
+
+- About-pagina:
+
+  - Tekstje met sporten en hobby's.
+  - Een afbeelding (bestandsnaam van de foto: hobby.jpg).
+
+- Projectpagina:
+
+  - Een unordered list met drie projecten waaraan je wilt werken in de toekomst.
+
+De styling:
+
+- Alle pagina's:
+
+  - Tekst (font) om te gebruiken: Lucida Console
+  - De grootte van de tekst (font): 16px
+  - De grootte van de tekst voor de links in de navigatie: 20px
+
+- Hoofdpagina:
+
+  - Achtergrondkleur: roze
+  - Tekstkleur: zwart
+
+- About-pagina:
+
+  - Achtergrondkleur: blauw
+  - Tekstkleur: wit
+
+- Projectpagina:
+  - Achtergrondkleur: groen
+  - Tekstkleur: wit

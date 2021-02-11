@@ -655,3 +655,238 @@ console.log(olifant.eet()); // Dumbo is aan het eten.
 console.log(olifant.eetVeel()); // Dumbo is aan het eten. En blijft eten.
 console.log(olifant.slaap()); // Dumbo is aan het slapen.
 ```
+
+## Access modifiers
+
+In andere programmeertalen is het mogelijk om gebruik te maken van `access modifiers` (Nederlands: toegangsmodifier). Met andere woorden, het is mogelijk om de toegang tot bepaalde properties en methoden te beperken.
+
+Meestal is er een keyword `public` en een keyword `private` dat gebruikt wordt om te bepalen of een property/methode
+overal (public) of enkel binnen een instantie van de class (private) beschikbaar is.
+
+Stel dat deze keywords zouden bestaan in JavaScript, dan zou het er zo uitzien:
+
+```js
+// GEEN GELDIGE JAVASCRIPT CODE
+class Persoon {
+  private pinCode;
+  private wachtwoord;
+  public naam;
+  public leeftijd;
+
+  constructor(pin, wachtwoord, naam, leeftijd) {
+    this.pinCode = pin;
+    this.wachtwoord = wachtwoord;
+    this.naam = naam;
+    this.leeftijd = leeftijd;
+  }
+
+  private getPin() {
+    return this.pinCode;
+  }
+
+  public getPinCode() {
+    return this.pinCode;
+  }
+
+  public getWachtwoord()
+}
+
+const persoon = new Persoon(1111, 1234, 'John Duck', 29);
+console.log(persoon.naam); // "John Duck"
+console.log(persoon.leeftijd); // 29
+console.log(persoon.pinCode); // Dit zou niks printen, pinCode is private
+console.log(persoon.wachtwoord); // Dit zou niks printen, wachtwoord is private
+
+console.log(persoon.getPin()); // Dit zou niks printen, getPin() is private
+console.log(persoon.getPinCode()); // 1111
+/* 
+* De property pinCode is private, en dus enkel beschikbaar binnen het codeblok van de class Persoon.
+* De methode getPinCode() is public, deze kan dus aangeroepen worden op de instantie.
+* Omdat getPinCode() binnen het codeblok van de class staat, kan deze aan de private properties/methodes.
+*/
+```
+
+In JavaScript bestaan de keywords `public` en `private` niet. De code zou er dus als volgt uitzien:
+
+```js
+class Persoon {
+  pinCode;
+  wachtwoord;
+  naam;
+  leeftijd;
+
+  constructor(pin, wachtwoord, naam, leeftijd) {
+    this.pinCode = pin;
+    this.wachtwoord = wachtwoord;
+    this.naam = naam;
+    this.leeftijd = leeftijd;
+  }
+
+  getPin() {
+    return this.pinCode;
+  }
+
+  getPinCode() {
+    return this.pinCode;
+  }
+}
+
+const persoon = new Persoon(1111, 1234, 'John Duck', 29);
+console.log(persoon.naam); // "John Duck"
+console.log(persoon.leeftijd); // 29
+console.log(persoon.pinCode); // 1111
+console.log(persoon.wachtwoord); // 1234
+
+console.log(persoon.getPin()); // 1111
+console.log(persoon.getPinCode()); // 1111
+```
+
+Alles is standaard `public`, alle properties en methodes kunnen aangeroepen worden op de instantie van een class.
+
+Er is echter een conventie die gebruikt wordt bij programmeurs om toch aan te geven dat iets eigenlijk `private` is.
+Door middel van een `_` (underscore) toe te voegen vooraan de naam van de property/methode, wordt aangegeven dat
+een property/methode eigenlijk `private` is.
+
+```js
+class Persoon {
+  _pinCode;
+  _wachtwoord;
+  naam;
+  leeftijd;
+
+  constructor(pin, wachtwoord, naam, leeftijd) {
+    this._pinCode = pin;
+    this._wachtwoord = wachtwoord;
+    this.naam = naam;
+    this.leeftijd = leeftijd;
+  }
+
+  _getPin() {
+    return this._pinCode;
+  }
+
+  getPinCode() {
+    return this._pinCode;
+  }
+}
+
+const persoon = new Persoon(1111, 1234, 'John Duck', 29);
+console.log(persoon.naam); // "John Duck"
+console.log(persoon.leeftijd); // 29
+console.log(persoon._pinCode); // 1111
+console.log(persoon._wachtwoord); // 1234
+
+console.log(persoon._getPin()); // 1111
+console.log(persoon.getPinCode()); // 1111
+```
+
+De properties/methodes met een underscore voor zijn even goed public, dus deze kunnen aangeroepen worden.
+Maar, als ontwikkelaar weet je dat dit eigenlijk niet de bedoeling is. Op deze manier is het toch mogelijk
+om een soort van `access modifiers` te hebben binnen JavaScript.
+
+## get & set
+
+Het keyword `get` en het keyword `set` kunnen gebruikt worden om `getters` en `setters` te maken.
+Dit zijn methodes die net iets anders werken.
+
+Stel dat er een class is Cursist:
+```js
+class Cursist {
+  _voornaam;
+  _achternaam;
+
+  constructor(voornaam, achternaam) {
+    this._voornaam = voornaam;
+    this._achternaam = achternaam;
+  }
+
+  getVoornaam() {
+    return this._voornaam;
+  }
+
+  setVoornaam(voornaam) {
+    this._voornaam = voornaam;
+  }
+
+  getAchternaam() {
+    return this._achternaam;
+  }
+
+  setAchternaam(achternaam) {
+    this._achternaam = achternaam;
+  }
+
+  getNaam() {
+    if (this._voornaam && this._achternaam) {
+      return `${this._voornaam} ${this._achternaam}`;
+    } else if (this._voornaam) {
+      return this._voornaam;
+    } else {
+      return this._achternaam;
+    }
+  }
+}
+
+const cursist = new Cursist("John", "Duck");
+
+console.log(cursist.getVoornaam()); // "John"
+console.log(cursist.getAchternaam()); // "Duck"
+cursist.setVoornaam("Jane");
+console.log(cursist.getNaam()); // "Jane Duck"
+```
+
+Dit zou werken en het is perfect geldige JavaScript. Maar het zou fijn zijn als de
+voornaam, achternaam en volledig naam opgevraagd kunnen worden als property.
+
+Hiervoor kan er gebruik gemaakt worden van `get` en `set`.
+
+```js
+class Cursist {
+  _voornaam;
+  _achternaam;
+
+  constructor(voornaam, achternaam) {
+    this._voornaam = voornaam;
+    this._achternaam = achternaam;
+  }
+
+  get voornaam() {
+    return this._voornaam;
+  }
+
+  set voornaam(voornaam) {
+    this._voornaam = voornaam;
+  }
+
+  get achternaam() {
+    return this._achternaam;
+  }
+
+  set achternaam(achternaam) {
+    this.achternaam = achternaam;
+  }
+
+  get naam() {
+    if (this._voornaam && this._achternaam) {
+      return `${this._voornaam} ${this._achternaam}`;
+    } else if (this._voornaam) {
+      return this._voornaam;
+    } else {
+      return this._achternaam;
+    }
+  }
+}
+
+const cursist = new Cursist("John", "Duck");
+
+console.log(cursist.voornaam); // "John"
+console.log(cursist.achternaam); // "Duck"
+cursist.voornaam = "Jane";
+console.log(cursist.naam); // "Jane Duck"
+```
+
+Het voordeel van het gebruiken van `getters` en `setters`, is dat het gebruikt kan worden
+alsof het properties zijn. Maar in feite zijn het methodes, waardoor er dus extra logica
+uitgevoerd kan worden. Een voorbeeld hier van is `get naam()`. Op de instantie wordt
+het opgeroepen alsof het een property is `cursist.naam`, maar achterliggend wordt
+het codeblok van de `getter methode` uitgevoerd.
