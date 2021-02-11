@@ -91,7 +91,18 @@ Voeg onder de hoofding een paragraaf toe. In de paragraaf stel je jezelf voor.
 Oplossing:
 
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvi</title>
+</head>
+<body>
+    <h1>Marvi</h1>
+    <p>Hoi, ik ben Simone and that's about it :P niks boeiend te vertellen</p>
+</body>
+</html>
 ```
 
 ## Opdracht 4
