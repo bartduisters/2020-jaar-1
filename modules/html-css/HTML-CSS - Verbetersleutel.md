@@ -146,6 +146,19 @@ Er verschijnen `Emmet Abbreviations`, kies voor `html:5` en klik op enter.
 
 ![2020-10-25-1603653261_screenshot_503x119](media/2020-10-25-1603653261_screenshot-959813882.jpeg)
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
 # Lijsten en tabellen
 
 **Gebruik vanaf nu VSCode (automatische indentatie, controle van syntax ...) om
