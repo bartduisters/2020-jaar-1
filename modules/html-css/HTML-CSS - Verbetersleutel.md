@@ -108,7 +108,7 @@ Oplossing:
     <title>Document</title>
 </head>
 <body>
-    <img src="https://d1ez3020z2uu9b.cloudfront.net/imagecache/blog-photos/17120_Fill_670_0.png"
+    <img src="https://d1ez3020z2uu9b.cloudfront.net/imagecache/blog-photos/17120_Fill_670_0.png"/>
 
 </body>
 </html>
