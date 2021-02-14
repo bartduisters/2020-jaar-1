@@ -369,6 +369,8 @@ Voeg aan deze class toe:
 - private property `lijst`
 - getter methode `lengte`:
   - Dit geeft de lengte van de private property `lijst` terug
+- getter methode `lijst`:
+  - Dit geeft de private property `lijst` terug
 - setter methode `voegToe`
   - Dit voegt een item toe aan het einde van de private property `lijst`
 - methode `aanpassen`, deze methode heeft één parameter genaamd `functie`:
@@ -392,6 +394,6 @@ Maak gebruik van de gemaakte class uit deel 1:
 
 // Onderstaande lus zal als resultaat hebben: 6, 2, 8, 2, 10, 18, 4
 for (let i = 0; i < nummers.lengte; i++) {
-  console.log(nummers[i]);
+  console.log(nummers.lijst[i]);
 }
 ```
