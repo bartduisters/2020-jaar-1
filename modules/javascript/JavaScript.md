@@ -890,3 +890,17 @@ alsof het properties zijn. Maar in feite zijn het methodes, waardoor er dus extr
 uitgevoerd kan worden. Een voorbeeld hier van is `get naam()`. Op de instantie wordt
 het opgeroepen alsof het een property is `cursist.naam`, maar achterliggend wordt
 het codeblok van de `getter methode` uitgevoerd.
+
+# Ingebouwde objecten
+
+Er zijn veel verschillende ingebouwde objecten. Deze objecten maken achterliggend gebruik van een class.
+
+Het is niet nodig om letterlijke elke functie en elke property van buiten te kennen.
+Om te weten wat er mogelijk is met een object dat globaal aanwezig is binnen JavaScript, kan er documentatie
+geraadpleegd worden.
+
+Een voorbeeld is de Array class. De [documentatie](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) kan teruggevonden worden op een website onderhouden door Mozilla
+(de makers van Firefox en Thunderbird).
+
+Leren werken met de documentatie wordt gedemonstreerd met een live demo.
+
