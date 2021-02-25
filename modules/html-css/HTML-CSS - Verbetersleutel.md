@@ -267,6 +267,26 @@ Oplossing:
 Zorg ervoor dat zowel de voornaam als de achternaam getoond worden onder één
 hoofding, met als content "naam".
 
+Oplossing:
+
+```html
+<table>
+      <tr>
+        <th colspan="2">naam</th>
+        <th>leeftijd</th>
+        <th>geslacht</th>
+        <th>docent</th>
+      </tr>
+      <tr>
+        <td>Bart</td>
+        <td>Duisters</td>
+        <td>29</td>
+        <td>m</td>
+        <td>01</td>
+      </tr>
+    </table>
+```
+
 # CSS
 
 ## Opdracht 1
