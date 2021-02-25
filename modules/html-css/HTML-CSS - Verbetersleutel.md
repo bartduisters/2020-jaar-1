@@ -291,11 +291,24 @@ Oplossing:
 Oplossing:
 
 ```html
-<!-- Pull Request hier de inhoud van het HTML-bestand -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Duck</title>
+    <link rel="stylesheet" type="text/css" href="./styling.css" />
+  </head>
+  <body>
+    <div>John Duck</div>
+  </body>
+</html>
 ```
 
 ```css
-<!-- Pull Request hier de inhoud van het CSS-bestand -->
+div {
+  color: red;
+}
 ```
 
 ## Opdracht 5
