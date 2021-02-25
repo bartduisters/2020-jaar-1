@@ -146,6 +146,8 @@ Er verschijnen `Emmet Abbreviations`, kies voor `html:5` en klik op enter.
 
 ![2020-10-25-1603653261_screenshot_503x119](media/2020-10-25-1603653261_screenshot-959813882.jpeg)
 
+Oplossing:
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -158,6 +160,7 @@ Er verschijnen `Emmet Abbreviations`, kies voor `html:5` en klik op enter.
     
 </body>
 </html>
+```
 
 # Lijsten en tabellen
 
