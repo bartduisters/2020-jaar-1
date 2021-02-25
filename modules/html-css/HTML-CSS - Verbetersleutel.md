@@ -244,7 +244,6 @@ Oplossing:
     <h1>Pannenkoeken</h1>
     <img
       src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_1280.jpg"
-      alt
       alt="Pannenkoeken"
     />
     <h2>Ingrediënten</h2>
