@@ -78,12 +78,17 @@ Oplossing:
 Oplossing:
 ```html
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title> Marvi Hendriks </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvi Hendriks</title>
 </head>
 <body>
-  <h1> Marvi Hendriks </h1>
+    <h1>Marvi Hendriks</h1>
 </body>
+</html>
 ```
 
 ## Opdracht 3
