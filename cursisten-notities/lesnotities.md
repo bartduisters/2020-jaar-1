@@ -24,3 +24,5 @@ Erna via de link (onder de groene knop “code”) in het git programma openen. 
 15. git commit -m “beschrijven”
 16. git log (optioneel)
 17. git push (hiermee wordt alles doorgepusht naar github)
+18. git pull (hiermee trek je nieuwe bestanden vanuit de remote repo lokaal binnen)
+
