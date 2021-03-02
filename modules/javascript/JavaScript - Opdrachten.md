@@ -416,7 +416,7 @@ const cursisten1 = [
 ];
 
 const cursisten2 = [  
-{ naam: "Romy" },
+  { naam: "Romy" },
   { naam: "Jorg" },
   { naam: "Tony $erneel$" },
   { naam: "Ian" },
@@ -444,4 +444,146 @@ const cursisten2 = [
 // 
 // Waarbij de drie puntjes alle tussenliggende cursisten voorstellen.
 bewerkteCursisten.forEach(cursist => console.log(cursist));
+```
+# Ingebouwde objecten
+
+## Schrijven
+
+### Opdracht 1
+
+```js
+const cursisten1 = [
+  { naam: "Yoeri" },
+  { naam: "Marvi Hendriks" },
+  { naam: "Simone :P" },
+  { naam: "Domenico" },
+  { naam: "Marco" },
+  { naam: "Michelle" },
+
+];
+
+const cursisten2 = [  
+{ naam: "Romy" },
+  { naam: "Jorg" },
+  { naam: "Tony $erneel$" },
+  { naam: "Ian" },
+  { naam: "Angelique" },
+  { naam: "Arne" }
+]
+
+// Gebruik een instantiemethode van Array om cursisten1 en cursisten2 samen te voegen,
+// zodat er één array is, toegekend aan een nieuwe variabele genaamd 'cursisten', 
+// waarin alle cursisten aanwezig zijn.
+
+/* TODO: voeg hier de oplossing toe */
+
+// Gebruik een instantiemethode van Array om een nieuwe array te maken
+// waar elk element een string is. Bijvoorbeeld 'Cursist: Romy'.
+// Ken de nieuwe array toe aan een variabele genaamd 'bewerkteCursisten'.
+
+/* TODO: voeg hier de oplossing toe */
+
+// Wijzig onderstaande code niet, dit moet uitprinten:
+// Cursist: Yoeri
+// Cursist: Marvi Hendriks
+// ...
+// Cursist: Arne
+// 
+// Waarbij de drie puntjes alle tussenliggende cursisten voorstellen.
+bewerkteCursisten.forEach(cursist => console.log(cursist));
+```
+
+### Opdracht 2
+
+In de commentaar staat omschreven wat er verwacht wordt.
+
+```js
+const studenten = [
+  {
+    naam: "Yoeri",
+  },
+  {
+    naam: "Marvi Hendriks",
+  },
+  {
+    naam: "Simone :P",
+  },
+  {
+    naam: "Domenico",
+  },
+  {
+    naam: "Marco",
+  },
+  {
+    naam: "Michelle",
+  },
+  {
+    naam: "Romy",
+  },
+  {
+    naam: "Jorg",
+  },
+  {
+    naam: "Tony $erneel$",
+  },
+  {
+    naam: "Ian",
+  },
+  {
+    naam: "Angelique",
+  },
+  {
+    naam: "Arne",
+  },
+];
+
+function filterCursisten(cursisten, letters) {
+  /*
+   * <eerste>
+   * Herschrijf de code tussen de <eerste></eerste> comment.
+   * Tip: Maak gebruik van .filter()
+   */
+  const gefilterdeCursisten = [];
+  for (let i = 0; i < cursisten.length; i++) {
+    const cursist = cursisten[i];
+
+    /*
+     * Omschrijf waarom .toLowerCase gebruikt wordt op zowel de naam als de letters
+     */
+    if (cursist.naam.toLowerCase().includes(letters.toLowerCase())) {
+      gefilterdeCursisten[gefilterdeCursisten.length] = cursist;
+    }
+  }
+  /*
+   * </eerste>
+   */
+  return gefilterdeCursisten;
+}
+
+const cursistenMetEenR = filterCursisten(studenten, "r");
+const cursistenMetCo = filterCursisten(studenten, "Co");
+
+function logCursisten(letters, cursisten) {
+  /*
+   * <tweede>
+   * Herschrijf de code tussen de <tweede></tweede> comment.
+   * Tip: Maak gebruik van .map
+   */
+  let namen = [];
+  for (let i = 0; i < cursisten.length; i++) {
+    namen[i] = cursisten[i].naam;
+  }
+  /*
+   * </tweede>
+   */
+
+  /*
+   * Omschrijf wat .join(', ') doet
+   */
+  namen = namen.join(", ");
+  console.log(`Cursisten met ${letters.toLowerCase()} in de naam: ${namen}`);
+}
+
+logCursisten("r", cursistenMetEenR);
+logCursisten("Co", cursistenMetCo);
 ```

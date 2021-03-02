@@ -681,3 +681,104 @@ const cursisten2 = [
 // 
 // Waarbij de drie puntjes alle tussenliggende cursisten voorstellen.
 bewerkteCursisten.forEach(cursist => console.log(cursist));
+```
+
+### Opdracht 2
+
+In de commentaar staat omschreven wat er verwacht wordt.
+
+```js
+const studenten = [
+  {
+    naam: "Yoeri",
+  },
+  {
+    naam: "Marvi Hendriks",
+  },
+  {
+    naam: "Simone :P",
+  },
+  {
+    naam: "Domenico",
+  },
+  {
+    naam: "Marco",
+  },
+  {
+    naam: "Michelle",
+  },
+  {
+    naam: "Romy",
+  },
+  {
+    naam: "Jorg",
+  },
+  {
+    naam: "Tony $erneel$",
+  },
+  {
+    naam: "Ian",
+  },
+  {
+    naam: "Angelique",
+  },
+  {
+    naam: "Arne",
+  },
+];
+
+function filterCursisten(cursisten, letters) {
+  /*
+   * <eerste>
+   * Herschrijf de code tussen de <eerste></eerste> comment.
+   * Tip: Maak gebruik van .filter()
+   */
+  const gefilterdeCursisten = [];
+  for (let i = 0; i < cursisten.length; i++) {
+    const cursist = cursisten[i];
+
+    /*
+     * Omschrijf waarom .toLowerCase gebruikt wordt op zowel de naam als de letters
+     */
+    if (cursist.naam.toLowerCase().includes(letters.toLowerCase())) {
+      gefilterdeCursisten[gefilterdeCursisten.length] = cursist;
+    }
+  }
+  /*
+   * </eerste>
+   */
+  return gefilterdeCursisten;
+}
+
+const cursistenMetEenR = filterCursisten(studenten, "r");
+const cursistenMetCo = filterCursisten(studenten, "Co");
+
+function logCursisten(letters, cursisten) {
+  /*
+   * <tweede>
+   * Herschrijf de code tussen de <tweede></tweede> comment.
+   * Tip: Maak gebruik van .map
+   */
+  let namen = [];
+  for (let i = 0; i < cursisten.length; i++) {
+    namen[i] = cursisten[i].naam;
+  }
+  /*
+   * </tweede>
+   */
+
+  /*
+   * Omschrijf wat .join(', ') doet
+   */
+  namen = namen.join(", ");
+  console.log(`Cursisten met ${letters.toLowerCase()} in de naam: ${namen}`);
+}
+
+logCursisten("r", cursistenMetEenR);
+logCursisten("Co", cursistenMetCo);
+```
+
+Oplossing:
+```js
+// TODO: Pull Request oplossing
+```
