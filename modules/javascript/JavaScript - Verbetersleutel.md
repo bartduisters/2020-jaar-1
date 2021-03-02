@@ -503,10 +503,7 @@ console.log(docent2.begroeting());
 console.log(docent2.getMotto());
 ```
 
-Oplossing:
-```js
-// Moet nog toegevoegd - mag via Pull Request
-```
+
 
 #### Deel 2
 
