@@ -63,7 +63,7 @@ Wat moet er bovenaan een geldige HTML5-pagina staan?
 Oplossing:
 
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
 ```
 
 ## Opdracht 2
@@ -318,7 +318,24 @@ hoofding, met als content "naam".
 Oplossing:
 
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div><h1 style="color: red">Wij</h1></div>
+    <div><h2 style="color: blue">volgen</h2></div>
+    <div><h3 style="color: red">les</h3></div>
+    <div><h4 style="color: blue">met</h4></div>
+    <div><h5 style="color: red">docent</h5></div>
+    <div><h6 style="color: blue">Bart</h6></div>
+  </body>
+</html>
+
 ```
 
 ## Opdracht 2
@@ -352,7 +369,23 @@ Oplossing:
 Oplossing:
 
 ```html
-<!-- Pull Request de oplossing -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>John Duck</div>
+  </body>
+</html>
 ```
 
 ## Opdracht 4
@@ -399,11 +432,33 @@ Tip: denk aan de verschillende `selectors` (element, class, id)
 Oplossing:
 
 ```html
-<!-- Pull Request hier de inhoud van het HTML-bestand -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .anders {
+        background-color: deeppink;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Bart</div>
+    <div class="anders">De</div>
+    <div>Duister</div>
+  </body>
+</html>
+
 ```
 
 ```css
-<!-- Pull Request hier de inhoud van het CSS-bestand -->
+div {
+background-color: blue;
+color: white;
 ```
 
 # Projectstructuur
