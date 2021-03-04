@@ -247,3 +247,42 @@ De styling:
 - Projectpagina:
   - Achtergrondkleur: groen
   - Tekstkleur: wit
+
+# JavaScript koppelen
+
+Als er staat 'target het element', dan staat er eigenlijk 'vraag het element op'.
+Als er staat 'referentie van element', dan staat er eigenlijk 'de variabele waarin het element is bijgehouden'.
+
+## Opdracht 1
+
+Maak een HTML-pagina (index.html) en koppel een extern JavaScript-bestand (hallo.js).
+
+HTML:
+- Plaats een div met id `begroeting`
+- Plaats een knop met een `onclick` event handler op de pagina
+  - Als er op deze knop geklikt wordt, wordt de functie `veranderTekst()` aangeroepen
+
+JavaScript:
+- Target het element met id `begroeting`
+- Plaats de tekst `Hallo!` in het element
+- Maak een functie `veranderTekst()`, als deze functie uitgevoerd wordt dan:
+  - Gebruik de referentie van het element `begroeting` om de tekst te wijzigen naar `Doei!`
+
+## Opdracht 2
+
+Maak een HTML-pagina (index.html) en koppel een extern JavaScript-bestand (bereken.js) en koppel een extern CSS-bestand (style.css).
+Indien nodig, voeg `class` of `id` toe op elementen om ze beter te kunnen targetten.
+
+HTML:
+- Plaats twee inputs op de pagina (number inputs)
+- Plaats een knop op de pagina
+  - Als er op de knop geklikt wordt, voer de functie `bereken()` uit
+- Plaats een div op de pagina om de uitkomst te tonen
+
+CSS:
+- Target de div waarin de uitkomst moet komen, zorg dat de uitkomst blauw getoond wordt en een fontgrootte heeft van 40px
+
+JavaScript:
+- Maak de functie genaamd `bereken`:
+  - Haal de waarden op van de twee numerieke inputs
+  - Toon de som van beide waarden in de div op de HTML-pagina
