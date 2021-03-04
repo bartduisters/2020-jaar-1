@@ -935,7 +935,39 @@ console.log(
 ```
 
 In de browser kan aangetoond worden dat de JavaScript correct wordt ingeladen:
+
 ![js](assets/js.jpeg)
+
+### defer
+
+Er is een manier om de JavaScript toch in de head-tag in te laden. Met het attribuut `defer`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS koppelen -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Externe JavaScript koppelen met een script-tag gebruikmakende van het attribuut "defer" -->
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <!-- Hier alle HTML-elementen -->
+    <h1 class='titel'>Voorbeeld</h1>
+    <h1 class='titel'>Voorbeeld</h1>
+    <h1 id='speciaal'>Voorbeeld</h1>
+  </body>
+</html>
+```
+
+Het is beter om een JavaScript met `defer` in te laden in de head-tag, dan JavaScript inladen onderaan de body-tag.
+
+Het verschil is dat bij het inladen van JavaScript in de body-tag, de JavaScript wordt ingeladen en vervolgens wordt uitgevoerd tijden het verwerken van de HTML. Bij het inladen van JavaScript in de head-tag met het attribuut `defer`, wordt de JavaScript ingeladen tijdens het verwerken van de HTML en vervolgens wordt **na** het verwerken van de HTML de JavaScript uitgevoerd.
 
 ### DOM
 
@@ -1072,3 +1104,37 @@ Via `removeAttribute` kunnen er attributen verwijderd worden van een element.
 
 ![hidden](assets/hidden.jpeg)
 Doordat via JavaScript het attribuut 'hidden' wordt toegevoegd, wordt het element niet getoond in de browser.
+
+### event handler
+
+Via event handlers (Nederlands: afhandelen van events) kan er JavaScript uitgevoerd worden afhankelijk van een event/actie die gebeurd in HTML.
+
+Een voorbeeld is het aanroepen van een JavaScript-functie wanneer er geklikt wordt op een element.
+
+index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <h1 onclick='afhandelenKlik()'>Voorbeeld</h1>
+    <div></div>
+  </body>
+</html>
+```
+
+index.js
+```js
+function afhandelenKlik() {
+  const divEl = document.querySelector("div");
+  divEl.innerText = "Er is op de header geklikt!";
+}
+```
+
