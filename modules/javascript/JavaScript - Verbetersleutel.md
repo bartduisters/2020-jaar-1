@@ -607,7 +607,33 @@ Voeg aan deze class toe:
 
 Oplossing:
 ```js
-// TODO: Pull Request de oplossing
+class Lijst {
+  _lijst = [];
+
+  get lengte() {
+    return this._lijst.length;
+  }
+
+  set voegToe(item) {
+    this._lijst.push(item);
+  }
+
+  aanpassen(functie) {
+    for (let i = 0; i < this._lijst.length; i++) {
+      this._lijst[i] = functie(this._lijst[i]);
+    }
+  }
+}
+
+function maalTwee(getal) {
+  return getal * 2;
+}
+
+const getallen = new Lijst();
+getallen.voegToe = 3;
+getallen.voegToe = 1;
+getallen.voegToe = 4;
+getallen.aanpassen(maalTwee);
 ```
 
 #### Deel 2
