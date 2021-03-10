@@ -626,13 +626,51 @@ Maak gebruik van de gemaakte class uit deel 1:
 
 // Onderstaande lus zal als resultaat hebben: 6, 2, 8, 2, 10, 18, 4
 for (let i = 0; i < nummers.lengte; i++) {
-  console.log(nummers[i]);
+  console.log(nummers.lijst[i]);
 }
 ```
 
 Oplossing:
 ```js
-// TODO: Pull Request de oplossing
+class Lijst {
+  _lijst = [];
+
+  get lengte() {
+    return this._lijst.length;
+  }
+
+  get lijst() {
+    return this._lijst;
+  }
+
+  set voegToe(item) {
+    this._lijst.push(item);
+  }
+
+  aanpassen(functie) {
+    for (let i = 0; i < this._lijst.length; i++) {
+      this._lijst[i] = functie(this._lijst[i]);
+    }
+  }
+}
+
+function maalTwee(item) {
+  return item * 2;
+}
+
+const nummers = new Lijst();
+nummers.voegToe = 3;
+nummers.voegToe = 1;
+nummers.voegToe = 4;
+nummers.voegToe = 1;
+nummers.voegToe = 5;
+nummers.voegToe = 9;
+nummers.voegToe = 2;
+nummers.aanpassen(maalTwee);
+
+for (let i = 0; i < nummers.lengte; i++) {
+  console.log(nummers.lijst[i]);
+}
 ```
 
 # Ingebouwde objecten
