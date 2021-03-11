@@ -665,6 +665,7 @@ class Lijst {
 
   set voegToe(item) {
     this._lijst[this._lijst.length] = item;
+    // ook mogelijk, gebruik maken van de getter 'lengte': this._lijst[this.lengte] = item;
   }
 
   aanpassen(functie) {
