@@ -122,6 +122,7 @@ console.log(studentEnkelAchternaam.volledigeNaam());
 ```
 
 Oplossing:
+
 ```js
 // 1. Definiëren van een class genaamd Student
 class Student {
@@ -182,6 +183,7 @@ Begin vanaf de code uit het onderdeel 'Class - Omschrijven - Opdracht 1':
 (in plaats van de properties een waarde toe te kennen nadat er een instantie gemaakt is).
 
 Oplossing:
+
 ```js
 class Student {
     voornaam;
@@ -243,6 +245,7 @@ const opel = {
 ```
 
 Oplossing:
+
 ```js
 class Wagen {
     merk;
@@ -288,6 +291,7 @@ console.log(Calculator.PI); // Dit moet 3.141592 loggen
 ```
 
 Oplossing:
+
 ```js
 class Calculator {
     static PI = 3.141592;
@@ -512,6 +516,7 @@ Zowel de class `Cursist` en `Docent` zullen overerven van `Persoon`.
 Zet alle gemeenschappelijke properties en methodes in de `super class`.
 
 Oplossing:
+
 ```js
 class Persoon {
   naam;
@@ -604,6 +609,7 @@ Voeg aan deze class toe:
 
 
 Oplossing:
+
 ```js
 class Lijst {
   _lijst = [];
@@ -659,6 +665,7 @@ for (let i = 0; i < nummers.lengte; i++) {
 ```
 
 Oplossing:
+
 ```js
 class Lijst {
   _lijst = [];
@@ -847,6 +854,7 @@ logCursisten("Co", cursistenMetCo);
 ```
 
 Oplossing:
+
 ```js
 // TODO: Pull Request oplossing
 ```

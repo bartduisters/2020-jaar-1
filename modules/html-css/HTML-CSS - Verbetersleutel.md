@@ -61,6 +61,7 @@
 Wat moet er bovenaan een geldige HTML5-pagina staan?
 
 Oplossing:
+
 ```html
 <!DOCTYPE html>
 ```
@@ -179,6 +180,7 @@ Er verschijnen `Emmet Abbreviations`, kies voor `html:5` en klik op enter.
 ![2020-10-25-1603653261_screenshot_503x119](media/2020-10-25-1603653261_screenshot-959813882.jpeg)
 
 Oplossing:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -245,7 +247,7 @@ Er is gevraagd om een layout te voorzien om een recept te tonen.
 Oplossing:
 
 ```html
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Opdracht 8</title>
@@ -302,6 +304,7 @@ Zorg ervoor dat zowel de voornaam als de achternaam getoond worden onder één
 hoofding, met als content "naam".
 
 Oplossing:
+
 ```html    
   <table>
       <tr>
@@ -527,7 +530,7 @@ De styling:
 Oplossing:
 
 ```html
-<!-- Pull Request hier de opgezette structuur (inhoud van de bestanden is niet nodig) -->
+<!-- TODO Pull Request hier de opgezette structuur (inhoud van de bestanden is niet nodig) -->
 ```
 
 # JavaScript koppelen
@@ -554,12 +557,12 @@ Oplossing:
 
 index.html
 ```html
-<!-- Pull Request hier de inhoud van de index.html -->
+<!-- TODO Pull Request hier de inhoud van de index.html -->
 ```
 
 hallo.js
 ```js
-// Pull Request hier de inhoud van hallo.js
+// TODO Pull Request hier de inhoud van hallo.js
 ```
 
 ## Opdracht 2
@@ -585,12 +588,15 @@ Oplossing:
 
 index.html
 ```html
+<!-- TODO -->
 ```
 
 bereken.js
 ```js
+// TODO
 ```
 
 style.css
 ```css
+/* TODO */
 ```
