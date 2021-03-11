@@ -61,9 +61,8 @@
 Wat moet er bovenaan een geldige HTML5-pagina staan?
 
 Oplossing:
-
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
 ```
 
 ## Opdracht 2
