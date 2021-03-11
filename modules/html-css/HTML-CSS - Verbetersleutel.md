@@ -226,14 +226,17 @@ Oplossing:
 
 ## Opdracht 4
 
-```html    
+Zorg ervoor dat zowel de voornaam als de achternaam getoond worden onder één
+hoofding, met als content "naam".
 
+Oplossing:
+```html    
   <table>
       <tr>
         <th colspan="2">naam</th>
         <th>leeftijd</th>
         <th>geslacht</th>
-        <th>docent id</th>
+        <th>docent</th>
       </tr>
       <tr>
         <td>Bart</td>
@@ -243,11 +246,7 @@ Oplossing:
         <td>01</td>
       </tr>
     </table>
-
 ```
-
-Zorg ervoor dat zowel de voornaam als de achternaam getoond worden onder één
-hoofding, met als content "naam".
 
 # CSS
 
