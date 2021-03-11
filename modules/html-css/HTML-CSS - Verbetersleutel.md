@@ -61,9 +61,8 @@
 Wat moet er bovenaan een geldige HTML5-pagina staan?
 
 Oplossing:
-
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
 ```
 
 ## Opdracht 2
@@ -302,6 +301,25 @@ Oplossing:
 Zorg ervoor dat zowel de voornaam als de achternaam getoond worden onder één
 hoofding, met als content "naam".
 
+Oplossing:
+```html    
+  <table>
+      <tr>
+        <th colspan="2">naam</th>
+        <th>leeftijd</th>
+        <th>geslacht</th>
+        <th>docent</th>
+      </tr>
+      <tr>
+        <td>Bart</td>
+        <td>Duisters</td>
+        <td>29</td>
+        <td>m</td>
+        <td>01</td>
+      </tr>
+    </table>
+```
+
 # CSS
 
 ## Opdracht 1
@@ -318,7 +336,7 @@ hoofding, met als content "naam".
 Oplossing:
 
 ```html
-<!-- TODO -->
+<!-- TODO Pull Request -->
 ```
 
 ## Opdracht 2
@@ -338,7 +356,7 @@ Oplossing:
     <title>CSS</title>
   </head>
   <body>
-    <div style="color: red">John Duck</div>
+    <div style="color: red;">John Duck</div>
   </body>
 </html>
 ```
@@ -352,7 +370,23 @@ Oplossing:
 Oplossing:
 
 ```html
-<!-- Pull Request de oplossing -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>John Duck</div>
+  </body>
+</html>
 ```
 
 ## Opdracht 4
@@ -363,6 +397,7 @@ Oplossing:
 
 Oplossing:
 
+index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -370,7 +405,7 @@ Oplossing:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Duck</title>
-    <link rel="stylesheet" type="text/css" href="./styling.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
     <div>John Duck</div>
@@ -378,6 +413,7 @@ Oplossing:
 </html>
 ```
 
+style.css
 ```css
 div {
   color: red;
@@ -398,12 +434,37 @@ Tip: denk aan de verschillende `selectors` (element, class, id)
 
 Oplossing:
 
+index.html
 ```html
-<!-- Pull Request hier de inhoud van het HTML-bestand -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+      .anders {
+        background-color: deeppink;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Bart</div>
+    <div class="anders">De</div>
+    <div>Duister</div>
+  </body>
+</html>
 ```
 
+style.css
 ```css
-<!-- Pull Request hier de inhoud van het CSS-bestand -->
+div {
+  background-color: blue;
+  color: white;
+}
 ```
 
 # Projectstructuur

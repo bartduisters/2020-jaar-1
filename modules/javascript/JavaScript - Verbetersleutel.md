@@ -503,11 +503,6 @@ console.log(docent2.begroeting());
 console.log(docent2.getMotto());
 ```
 
-Oplossing:
-```js
-// Moet nog toegevoegd - mag via Pull Request
-```
-
 #### Deel 2
 
 Ga verder op de oplossing uit deel 1, zorg voor een algemene class genaamd `Persoon`.
@@ -598,12 +593,15 @@ Voeg aan deze class toe:
 - private property `lijst`
 - getter methode `lengte`:
   - Dit geeft de lengte van de private property `lijst` terug
+- getter methode `lijst`:
+  - Dit geeft de private property `lijst` terug
 - setter methode `voegToe`
   - Dit voegt een item toe aan het einde van de private property `lijst`
 - methode `aanpassen`, deze methode heeft één parameter genaamd `functie`:
   - ga er vanuit dat de functie die meegegeven wordt als paramter, altijd een waarde teruggeeft
   - gebruik iteratie om over elke waarde van de private property `lijst` te itereren, ken de waarde
   die de functie teruggeeft toe aan de index waarover geïterreerd wordt
+
 
 Oplossing:
 ```js
@@ -613,13 +611,17 @@ class Lijst {
   get lengte() {
     return this._lijst.length;
   }
+  
+  get lijst() {
+    return this._lijst;
+  }
 
   set voegToe(item) {
-    this._lijst.push(item);
+    this._lijst[this._lijst.length] = item;
   }
 
   aanpassen(functie) {
-    for (let i = 0; i < this._lijst.length; i++) {
+    for (let i = 0; i < this.lengte; i++) {
       this._lijst[i] = functie(this._lijst[i]);
     }
   }
@@ -658,7 +660,52 @@ for (let i = 0; i < nummers.lengte; i++) {
 
 Oplossing:
 ```js
-// TODO: Pull Request de oplossing
+class Lijst {
+  _lijst;
+
+  constructor() {
+    this._lijst = [];
+  }
+
+  get lengte() {
+    return this._lijst.length;
+  }
+
+  set voegToe(item) {
+    this._lijst[this._lijst.length] = item;
+    // ook mogelijk, gebruik maken van de getter 'lengte': this._lijst[this.lengte] = item;
+  }
+
+  aanpassen(functie) {
+    for (let i = 0; i < this.lengte; i++) {
+      this._lijst[i] = functie(this._lijst[i]);
+    }
+  }
+
+  get lijst() {
+    return this._lijst;
+  }
+}
+
+const nummers = new Lijst();
+
+nummers.voegToe = 3;
+nummers.voegToe = 1;
+nummers.voegToe = 4;
+nummers.voegToe = 1;
+nummers.voegToe = 5;
+nummers.voegToe = 9;
+nummers.voegToe = 2;
+
+function maalTwee(item) {
+  return item * 2;
+}
+nummers.aanpassen(maalTwee);
+
+// Onderstaande lus zal als resultaat hebben: 6, 2, 8, 2, 10, 18, 4
+for (let i = 0; i < nummers.lengte; i++) {
+  console.log(nummers[i]);
+}
 ```
 
 # Ingebouwde objecten
