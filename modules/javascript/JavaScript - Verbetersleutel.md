@@ -593,6 +593,8 @@ Voeg aan deze class toe:
 - private property `lijst`
 - getter methode `lengte`:
   - Dit geeft de lengte van de private property `lijst` terug
+- getter methode `lijst`:
+  - Dit geeft de private property `lijst` terug
 - setter methode `voegToe`
   - Dit voegt een item toe aan het einde van de private property `lijst`
 - methode `aanpassen`, deze methode heeft één parameter genaamd `functie`:
@@ -600,17 +602,18 @@ Voeg aan deze class toe:
   - gebruik iteratie om over elke waarde van de private property `lijst` te itereren, ken de waarde
   die de functie teruggeeft toe aan de index waarover geïterreerd wordt
 
+
 Oplossing:
 ```js
 class Lijst {
-  _lijst;
-
-  constructor() {
-    this._lijst = [];
-  }
+  _lijst = [];
 
   get lengte() {
     return this._lijst.length;
+  }
+  
+  get lijst() {
+    return this._lijst;
   }
 
   set voegToe(item) {
@@ -623,6 +626,16 @@ class Lijst {
     }
   }
 }
+
+function maalTwee(getal) {
+  return getal * 2;
+}
+
+const getallen = new Lijst();
+getallen.voegToe = 3;
+getallen.voegToe = 1;
+getallen.voegToe = 4;
+getallen.aanpassen(maalTwee);
 ```
 
 #### Deel 2
