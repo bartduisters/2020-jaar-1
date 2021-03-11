@@ -318,24 +318,7 @@ hoofding, met als content "naam".
 Oplossing:
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div><h1 style="color: red">Wij</h1></div>
-    <div><h2 style="color: blue">volgen</h2></div>
-    <div><h3 style="color: red">les</h3></div>
-    <div><h4 style="color: blue">met</h4></div>
-    <div><h5 style="color: red">docent</h5></div>
-    <div><h6 style="color: blue">Bart</h6></div>
-  </body>
-</html>
-
+<!-- TODO Pull Request -->
 ```
 
 ## Opdracht 2
@@ -355,7 +338,7 @@ Oplossing:
     <title>CSS</title>
   </head>
   <body>
-    <div style="color: red">John Duck</div>
+    <div style="color: red;">John Duck</div>
   </body>
 </html>
 ```
@@ -396,6 +379,7 @@ Oplossing:
 
 Oplossing:
 
+index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -403,7 +387,7 @@ Oplossing:
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Duck</title>
-    <link rel="stylesheet" type="text/css" href="./styling.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
     <div>John Duck</div>
@@ -411,6 +395,7 @@ Oplossing:
 </html>
 ```
 
+style.css
 ```css
 div {
   color: red;
@@ -431,6 +416,7 @@ Tip: denk aan de verschillende `selectors` (element, class, id)
 
 Oplossing:
 
+index.html
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -439,6 +425,7 @@ Oplossing:
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <style>
       .anders {
         background-color: deeppink;
@@ -452,13 +439,14 @@ Oplossing:
     <div>Duister</div>
   </body>
 </html>
-
 ```
 
+style.css
 ```css
 div {
-background-color: blue;
-color: white;
+  background-color: blue;
+  color: white;
+}
 ```
 
 # Projectstructuur
