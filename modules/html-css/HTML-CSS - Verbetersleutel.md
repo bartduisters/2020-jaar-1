@@ -339,7 +339,55 @@ Oplossing:
 Oplossing:
 
 ```html
-<!-- TODO Pull Request -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <style>
+      h1 {
+        color: red;
+      }
+      h2 {
+        color: blue;
+      }
+      h3 {
+        color: red;
+      }
+      h4 {
+        color: blue;
+      }
+      h5 {
+        color: red;
+      }
+      h6 {
+        color: blue;
+      }
+    </style>
+    <h1>H1 - red</h1>
+    <div style="color: red; font-size: 200%; font-weight: bold;"">
+      H1 - red
+    </div>
+    <h2>H2 - blue</h2>
+    <div style="color: blue; font-size: 150%; font-weight: bold;"">
+        H2 - blue
+    </div>
+    <h3>H3 - red</h3>
+    <div style="color: red; font-size: 115%; font-weight: bold;"">
+        H3 - red
+    </div>
+    <h4>H4 - blue</h4>
+    <div style="color: blue; font-size: 100%; font-weight: bold;"">
+        H4 - blue
+    </div>
+    <h5>H5 - red</h5>
+    <div style="color: red; font-size: 85%; font-weight: bold;"">
+      H5 - red
+    </div>
+    <h6>H6 - blue</h6>
+    <div style="color: blue; font-size: 65%; font-weight: bold;"">
+      H6 - blue
+    </div>
+  </body>
+</html>
 ```
 
 ## Opdracht 2
