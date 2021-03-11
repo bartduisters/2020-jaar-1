@@ -428,13 +428,13 @@ const cursisten2 = [
 // zodat er één array is, toegekend aan een nieuwe variabele genaamd 'cursisten', 
 // waarin alle cursisten aanwezig zijn.
 
-/* TODO: voeg hier de oplossing toe */
+/* Voeg hier de oplossing toe */
 
 // Gebruik een instantiemethode van Array om een nieuwe array te maken
 // waar elk element een string is. Bijvoorbeeld 'Cursist: Romy'.
 // Ken de nieuwe array toe aan een variabele genaamd 'bewerkteCursisten'.
 
-/* TODO: voeg hier de oplossing toe */
+/* Voeg hier de oplossing toe */
 
 // Wijzig onderstaande code niet, dit moet uitprinten:
 // Cursist: Yoeri
