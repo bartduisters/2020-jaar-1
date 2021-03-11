@@ -339,7 +339,7 @@ Oplossing:
 Oplossing:
 
 ```html
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
   <body>
     <style>
