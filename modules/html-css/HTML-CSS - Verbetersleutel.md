@@ -572,7 +572,6 @@ index.html
     <div id="begroeting"></div>
     <button onclick="veranderTekst()">change</button>
   </body>
-
 </html>
 ```
 
