@@ -654,36 +654,31 @@ Maak gebruik van de gemaakte class uit deel 1:
 
 // Onderstaande lus zal als resultaat hebben: 6, 2, 8, 2, 10, 18, 4
 for (let i = 0; i < nummers.lengte; i++) {
-  console.log(nummers[i]);
+  console.log(nummers.lijst[i]);
 }
 ```
 
 Oplossing:
 ```js
 class Lijst {
-  _lijst;
-
-  constructor() {
-    this._lijst = [];
-  }
+  _lijst = [];
 
   get lengte() {
     return this._lijst.length;
   }
+  
+  get lijst() {
+    return this._lijst;
+  }
 
   set voegToe(item) {
     this._lijst[this._lijst.length] = item;
-    // ook mogelijk, gebruik maken van de getter 'lengte': this._lijst[this.lengte] = item;
   }
 
   aanpassen(functie) {
     for (let i = 0; i < this.lengte; i++) {
       this._lijst[i] = functie(this._lijst[i]);
     }
-  }
-
-  get lijst() {
-    return this._lijst;
   }
 }
 
@@ -704,7 +699,7 @@ nummers.aanpassen(maalTwee);
 
 // Onderstaande lus zal als resultaat hebben: 6, 2, 8, 2, 10, 18, 4
 for (let i = 0; i < nummers.lengte; i++) {
-  console.log(nummers[i]);
+  console.log(nummers.lijst[i]);
 }
 ```
 
