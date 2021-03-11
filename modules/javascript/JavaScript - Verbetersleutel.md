@@ -503,11 +503,6 @@ console.log(docent2.begroeting());
 console.log(docent2.getMotto());
 ```
 
-Oplossing:
-```js
-// Moet nog toegevoegd - mag via Pull Request
-```
-
 #### Deel 2
 
 Ga verder op de oplossing uit deel 1, zorg voor een algemene class genaamd `Persoon`.
