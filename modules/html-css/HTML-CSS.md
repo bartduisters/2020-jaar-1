@@ -891,7 +891,7 @@ Binnen deze cursus zal gebruikt gemaakt worden van een vaste structuur om een ov
 
 De `/` slaat terug op 'de root van het project'. In de root zelf bevindt zich de index.html, dit is de hoofdpagina van het project en zal altijd index.html noemen. In de map `assets` bevindt zich alles wat in het project gebruikt wordt: stylesheets (css), afbeeldingen (img) ... In de map `pages` bevinden zich alle extra pagina's. Wanneer er JavaScript bijkomt, zal dit komen in een map `js` in de map `assets`.
 
-## JavaScript koppelen
+# JavaScript koppelen
 
 Net als CSS, kan JavaScript ook gekoppeld worden in een HTML-pagina.
 JavaScript **kan** ingeladen worden in de head-tag. Maar om in de JavaScript-bestanden aan de HTML-elementen te kunnen, moet de JavaScript ingeladen worden **na** alle HTML-elementen, onderaan in de body-tag.
@@ -938,7 +938,7 @@ In de browser kan aangetoond worden dat de JavaScript correct wordt ingeladen:
 
 ![js](assets/js.jpeg)
 
-### defer
+## defer
 
 Er is een manier om de JavaScript toch in de head-tag in te laden. Met het attribuut `defer`.
 
@@ -969,7 +969,7 @@ Het is beter om een JavaScript met `defer` in te laden in de head-tag, dan JavaS
 
 Het verschil is dat bij het inladen van JavaScript in de body-tag, de JavaScript wordt ingeladen en vervolgens wordt uitgevoerd tijden het verwerken van de HTML. Bij het inladen van JavaScript in de head-tag met het attribuut `defer`, wordt de JavaScript ingeladen tijdens het verwerken van de HTML en vervolgens wordt **na** het verwerken van de HTML de JavaScript uitgevoerd.
 
-### DOM
+## DOM
 
 Document Object Model, alle elementen van de webpagina.
 
@@ -983,7 +983,7 @@ In Firefox, wanneer in de console document getypt wordt, kunnen alle properties 
 
 Op dit object zijn er methodes aanwezig om de elementen van het DOM op te vragen. Twee van de methodes zijn `document.querySelector()` en `document.querySelectorAll()`.
 
-### querySelector & querySelectorAll
+## querySelector & querySelectorAll
 
 Dit geeft het eerste element terug dat overeenkomt met de selector die meegegeven wordt als parameter. De selectors die meegegeven worden, zijn dezelfde selectors zoals gebruikt worden in CSS.
 
@@ -1030,7 +1030,7 @@ In Firefox is het mogelijk om te zien welke properties/methodes er bestaan op ee
 
 ![querySelector-h1](assets/querySelector-h1.jpeg)
 
-### classList
+## classList
 
 Een van de bestaande properties op een element, is `classList`. Deze property is opnieuw een object waarop methodes bestaand om classes toe te voegen en te verwijderen.
 
@@ -1074,7 +1074,7 @@ Via de methode `remove` kan een class worden verwijderd.
 
 De `class="toegevoegd"` is aan het DOM toegevoegd op het moment dat de JavaScript-code is uitgevoerd.
 
-### setAttribute & removeAttribute
+## setAttribute & removeAttribute
 
 Via `setAttribute` kunnen er attributen toegevoegd worden aan een element.
 Via `removeAttribute` kunnen er attributen verwijderd worden van een element.
@@ -1105,7 +1105,7 @@ Via `removeAttribute` kunnen er attributen verwijderd worden van een element.
 ![hidden](assets/hidden.jpeg)
 Doordat via JavaScript het attribuut 'hidden' wordt toegevoegd, wordt het element niet getoond in de browser.
 
-### event handler
+## event handler
 
 Via event handlers (Nederlands: afhandelen van events) kan er JavaScript uitgevoerd worden afhankelijk van een event/actie die gebeurd in HTML.
 
@@ -1138,3 +1138,8 @@ function afhandelenKlik() {
 }
 ```
 
+
+
+# CSS zelfstudie
+
+Verwerk de theorie rondom CSS via [w3schools](https://www.w3schools.com/Css/). Verwerk alles dat valt onder de hoofding `CSS Tutorial`. Dit betekent dus dat `CSS Advanced` nog niet verwerkt moet worden.

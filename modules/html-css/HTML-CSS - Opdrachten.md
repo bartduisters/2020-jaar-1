@@ -286,3 +286,7 @@ JavaScript:
 - Maak de functie genaamd `bereken`:
   - Haal de waarden op van de twee numerieke inputs
   - Toon de som van beide waarden in de div op de HTML-pagina
+
+# CSS Zelfstudie
+
+Onder de hoofding `CSS Examples`, klik op `CSS Exercises`. Maak alle oefeningen tot en met `CSS Text Effects`. De onderste vijf onderwerpen moeten niet gemaakt worden.
