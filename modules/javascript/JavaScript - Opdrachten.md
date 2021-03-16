@@ -491,48 +491,21 @@ const studenten = [
 ];
 
 function filterCursisten(cursisten, letters) {
-  /*
-   * <eerste>
-   * Herschrijf de code tussen de <eerste></eerste> comment.
-   * Tip: Maak gebruik van .filter()
-   */
-  const gefilterdeCursisten = [];
-  for (let i = 0; i < cursisten.length; i++) {
-    const cursist = cursisten[i];
-
-    /*
-     * Omschrijf waarom .toLowerCase gebruikt wordt op zowel de naam als de letters
-     */
-    if (cursist.naam.toLowerCase().includes(letters.toLowerCase())) {
-      gefilterdeCursisten[gefilterdeCursisten.length] = cursist;
-    }
-  }
-  /*
-   * </eerste>
-   */
+const gefilterdeCursisten = cursisten.filter((cursist) =>
+    cursist.naam.toLowerCase().includes(letters.toLowerCase())
+  );
   return gefilterdeCursisten;
+  // zet alle strings om naar kleine letters zodat alle strings als gelijken worden beschouwd ("h" is dan hetzelfde als "H")
 }
 
 const cursistenMetEenR = filterCursisten(studenten, "r");
 const cursistenMetCo = filterCursisten(studenten, "Co");
 
 function logCursisten(letters, cursisten) {
-  /*
-   * <tweede>
-   * Herschrijf de code tussen de <tweede></tweede> comment.
-   * Tip: Maak gebruik van .map
-   */
-  let namen = [];
-  for (let i = 0; i < cursisten.length; i++) {
-    namen[i] = cursisten[i].naam;
-  }
-  /*
-   * </tweede>
-   */
+  let namen = cursisten.map((cursist) => cursist.naam);
 
-  /*
-   * Omschrijf wat .join(', ') doet
-   */
+  /* .join(', ') creërt en returns een nieuwe string door de elementen te 
+  concatenaten en die te verdelen met een comma of een ander specifieke seperator string. */
   namen = namen.join(", ");
   console.log(`Cursisten met ${letters.toLowerCase()} in de naam: ${namen}`);
 }
