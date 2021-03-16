@@ -491,11 +491,15 @@ const studenten = [
 ];
 
 function filterCursisten(cursisten, letters) {
-const gefilterdeCursisten = cursisten.filter((cursist) =>
-    cursist.naam.toLowerCase().includes(letters.toLowerCase())
-  );
+  const gefilterdeCursisten = cursisten.filter((cursist) => {
+    /*
+     * Omschrijf waarom .toLowerCase gebruikt wordt op zowel de naam als de letters
+     * Antwoord: Zet alle strings om naar kleine letters zodat het niet uitmaakt of een woord met hoofdletters of met kleine letters geschreven is
+     * "HaLlO" wordt "hallo"
+     */
+    return cursist.naam.toLowerCase().includes(letters.toLowerCase())
+  });
   return gefilterdeCursisten;
-  // zet alle strings om naar kleine letters zodat alle strings als gelijken worden beschouwd ("h" is dan hetzelfde als "H")
 }
 
 const cursistenMetEenR = filterCursisten(studenten, "r");
@@ -504,8 +508,10 @@ const cursistenMetCo = filterCursisten(studenten, "Co");
 function logCursisten(letters, cursisten) {
   let namen = cursisten.map((cursist) => cursist.naam);
 
-  /* .join(', ') creërt en returns een nieuwe string door de elementen te 
-  concatenaten en die te verdelen met een comma of een ander specifieke seperator string. */
+  /*
+   * Omschrijf wat .join(', ') doet
+   * Antwoord: Maakt een string, gebaseerd op alle elementen op de array en tussen elk element wordt een komma en een spatie geplaatst
+   */
   namen = namen.join(", ");
   console.log(`Cursisten met ${letters.toLowerCase()} in de naam: ${namen}`);
 }
