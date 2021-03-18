@@ -584,6 +584,67 @@ console.log(docent2.begroeting());
 console.log(docent2.getMotto());
 ```
 
+#### Deel 3
+
+Ga verder op de oplossing uit deel 2.
+
+In plaats van aparte instanties van elke class, moet er gebruik gemaakt worden van een array waaraan alle instanties toegekend worden.
+Gebruik iteratie om alle begroetingen van alle instanties te loggen.
+
+Maak een aparte array voor cursisten en een aparte array voor docenten.
+
+Tip:
+
+```js
+const cursisten = [];
+cursisten.push(new Cursist("Bart")); // Dit voegt de instantie toe aan de array op index 0
+cursisten.push(new Cursist("Bart")); // Dit voegt de instantie toe aan de array op index 1
+// ...
+```
+
+Oplossing:
+
+```js
+// TODO pull request oplossing
+```
+
+#### Deel 4
+
+Ga verder op deel 3.
+
+Gegeven zijn onderstaande JavaScript arrays.
+
+```js
+const cursisten = [
+  { naam: "Yoeri" },
+  { naam: "Marvi Hendriks" },
+  { naam: "Simone :P" },
+  { naam: "Domenico" },
+  { naam: "Marco" },
+  { naam: "Michelle" },
+  { naam: "Romy" },
+  { naam: "Jorg" },
+  { naam: "Tony $erneel$" },
+  { naam: "Ian" },
+  { naam: "Angelique" },
+  { naam: "Arne" },
+];
+
+const docenten = [
+  { naam: "Bart", motto: "25 is grappiger dan 24" },
+  { naam: "Mark", motto: "24 is grappiger dan 25" },
+];
+```
+
+Gebruik iteratie om instanties te maken voor cursisten.
+Gebruik iteratie om instanties te maken voor docenten.
+
+Oplossing:
+
+```js
+// TODO pull request oplossing
+```
+
 # Access modifiers - get & set
 
 ## Schrijven
