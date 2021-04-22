@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("../../images/zee.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-content {
+  /*
+   * Doordat alles in de <header> display: flex; heeft gekregen
+   * is het nodig om dit terug naar block te zetten als we de
+   * standaard displaywaarde terug willen gebruiken.
+   */
+  display: block;
+}
+
+/* Zorg ervoor dat enkel de header in de afbeelding de kleur wit heeft */
+
+/* 
+* Zorg ervoor dat de knop er als volgt uitziet: resultaat/knop.png
+* Zorg ervoor dat wanneer er over de knop gehoverd wordt, de knop er als volgt uitziet: resultaat/knop-hover.png
+* De kleur van de knop: #008cba
+*/
