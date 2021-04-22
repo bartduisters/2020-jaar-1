@@ -605,12 +605,34 @@ Oplossing:
 
 index.html
 ```html
-<!-- TODO Pull Request hier de inhoud van de index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript koppelen</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./hallo.js"></script>
+  </head>
+  <body>
+    <div id="begroeting"></div>
+    <button onclick="veranderTekst()">change</button>
+  </body>
+</html>
 ```
 
 hallo.js
 ```js
-// TODO Pull Request hier de inhoud van hallo.js
+
+const begroeting = document.querySelector("#begroeting");
+begroeting.innerText = "Hallo!";
+
+function veranderTekst() {
+  begroeting.innerText = "Doei!";
+}
+
 ```
 
 ## Opdracht 2
