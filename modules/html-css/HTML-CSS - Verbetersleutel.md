@@ -295,7 +295,39 @@ Maak een tabel met als kolomnamen:
 Oplossing:
 
 ```html
-<!-- TODO -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Voornaam</th>
+            <th>Achternaam</th>
+            <th>Leeftijd</th>
+            <th>Geslacht</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Bart</td>
+            <td>Duisters</td>
+            <td>/</td>
+            <td>M</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Voornaam</th>
+            <th>Achternaam</th>
+            <th>Leeftijd</th>
+            <th>Geslacht</th>
+            <th>Docent</th>
+        </tr>
+        <tr>
+            <td>Romy</td>
+            <td>Sillen</td>
+            <td>24</td>
+            <td>V</td>
+            <td>0</td>
+        </tr>
+    </table>
 ```
 
 ## Opdracht 4
