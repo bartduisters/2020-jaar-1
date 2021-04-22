@@ -582,7 +582,7 @@ const begroeting = document.querySelector("#begroeting");
 begroeting.innerText = "Hallo!";
 
 function veranderTekst() {
-  begroeting.innerText = "Doei";
+  begroeting.innerText = "Doei!";
 }
 
 ```
