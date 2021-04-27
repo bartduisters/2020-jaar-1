@@ -690,15 +690,42 @@ Oplossing:
 
 index.html
 ```html
-<!-- TODO -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript koppelen - opdracht 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="bereken.js"></script>
+  </head>
+  <body>
+    <input id='nummer1' type="number" />
+    <input id='nummer2' type="number" />
+    <button onclick="bereken()">Berekenen</button>
+    <div id="uitkomst"></div>
+  </body>
+</html>
 ```
 
 bereken.js
 ```js
-// TODO
+const uitkomstElement = document.querySelector("#uitkomst");
+const nummer1Element = document.querySelector("#nummer1");
+const nummer2Element = document.querySelector("#nummer2");
+
+function bereken() {
+  const getal1 = parseFloat(nummer1Element.value);
+  const getal2 = parseFloat(nummer2Element.value);
+  uitkomstElement.innerHTML = getal1 + getal2;
+}
 ```
 
 style.css
 ```css
-/* TODO */
+#uitkomst {
+    color: blue;
+    font-size: 40px;
+}
 ```
