@@ -1,0 +1,15 @@
+{
+  "name": "fetch-voorbeeld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bart Duisters",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
