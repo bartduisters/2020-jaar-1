@@ -1,0 +1,17 @@
+body {
+  /* TODO: Gebruik display flex om te zorgen dat alles gecentreerd is */
+  /* Tip: de hoogte moet de volledige hoogte in beslag nemen om verticaal te kunnen centreren */
+}
+
+/* 
+ * TODO: Voeg een selector toe om te zorgen dat wanneer er over een taak gehoverd wordt, de cursor wijzigt in een handje 
+ * Cursor wijzigen in een handje kan met de CSS rule 'cursor: pointer;'
+ */
+
+.flex-container {
+  /* TODO: Maak gebruik van flex, margin en gap om te zorgen dat het resultaat eruit ziet zoals op de afbeelding in 'resultaat' */
+}
+
+.klaar {
+  text-decoration: line-through;
+}
