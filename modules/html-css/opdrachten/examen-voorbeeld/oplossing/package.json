@@ -1,0 +1,16 @@
+{
+  "name": "examen-voorbeeld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend": "json-server --watch backend/db.json",
+    "frontend": "live-server frontend"
+  },
+  "author": "Bart Duisters",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.3",
+    "live-server": "^1.2.1"
+  }
+}

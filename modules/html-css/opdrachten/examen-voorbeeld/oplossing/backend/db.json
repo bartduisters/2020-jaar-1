@@ -1,0 +1,64 @@
+{
+  "cursisten": [
+    {
+      "id": 0,
+      "naam": "Yoeri"
+    },
+    {
+      "id": 1,
+      "naam": "Marvi Hendriks"
+    },
+    {
+      "id": 2,
+      "naam": "Simone :P"
+    },
+    {
+      "id": 3,
+      "naam": "Domenico"
+    },
+    {
+      "id": 4,
+      "naam": "Marco "
+    },
+    {
+      "id": 5,
+      "naam": "Michelle"
+    },
+    {
+      "id": 6,
+      "naam": "Romy"
+    },
+    {
+      "id": 7,
+      "naam": "Jorg"
+    },
+    {
+      "id": 8,
+      "naam": "Tony $erneel$"
+    },
+    {
+      "id": 9,
+      "naam": "Ian"
+    },
+    {
+      "id": 10,
+      "naam": "Angelique"
+    },
+    {
+      "id": 11,
+      "naam": "Arne"
+    }
+  ],
+  "taken": [
+    {
+      "naam": "Eerste taak",
+      "isKlaar": true,
+      "id": 1
+    },
+    {
+      "naam": "Tweede taak",
+      "isKlaar": false,
+      "id": 2
+    }
+  ]
+}

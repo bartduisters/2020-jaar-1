@@ -1,0 +1,27 @@
+body {
+  /* Gebruik display flex om te zorgen dat alles gecentreerd is */
+  /* Tip: de hoogte moet de volledige hoogte in beslag nemen om verticaal te kunnen centreren */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 
+ * Voeg een selector toe om te zorgen dat wanneer er over een taak gehoverd wordt, de cursor wijzigt in een handje 
+ * Cursor wijzigen in een handje kan met de CSS rule 'cursor: pointer;'
+ */
+.list-group-item {
+  cursor: pointer;
+}
+
+.flex-container {
+  /* Maak gebruik van flex, margin en gap om te zorgen dat het resultaat eruit ziet zoals op de afbeelding in 'resultaat' */
+  display: flex;
+  margin: 4px;
+  gap: 8px;
+}
+
+.klaar {
+  text-decoration: line-through;
+}
